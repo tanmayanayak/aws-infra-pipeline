@@ -23,7 +23,7 @@ Actions:
     Compute:
       Type: EC2
     Configuration:
-      Region: us-east-1
+      Region: us-west-2
       CdkCliVersion: 2.1004.0
   AWSCDKDeploy_37:
     # Identifies the action. Do not modify this value.
@@ -38,10 +38,9 @@ Actions:
         - WorkflowSource # This specifies that the action requires this Workflow as a source
     Compute:
       Type: EC2
-      Fleet: Linux.x86-64.Large # Defines the action's properties.
     Configuration:
       StackName: CdkS3BucketStack
-      Region: us-east-1
+      Region: us-west-2
       CdkCliVersion: 2.1004.0
     DependsOn:
       - AWSCDKBootstrap_e2
