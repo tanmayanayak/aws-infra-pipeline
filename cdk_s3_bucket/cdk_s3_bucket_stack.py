@@ -11,7 +11,7 @@ class CdkS3BucketStack(Stack):
         super().__init__(scope, construct_id, **kwargs)
 
         # Create an S3 bucket
-        bucket = s3.Bucket(self, "test-demo-cdk-buckbul",  # Changed from XXXXXXXXXXXXX to a meaningful ID
+        bucket = s3.Bucket(self, "demo-cdk-code-catalyst-abhishek",  # Changed from XXXXXXXXXXXXX to a meaningful ID
             # Optional configurations
             bucket_name="testing-test-doc-bukall",  # Changed from XXXXXXXXXXXXX to a meaningful name
             versioned=True,  # Enable versioning
